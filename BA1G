@@ -1,0 +1,15 @@
+def HammingDistance(p,q):
+  if (len(p)!=len(q)):
+    return -1;
+  else :
+    dist=0;
+    for i in range(0,len(p)):
+      if(p[i]!=q[i]):
+        dist=dist+1;
+    return dist;
+
+print("Unesi p: ");
+p=input();
+print("Unesi g: ");
+q=input();
+print(HammingDistance(p,q));
